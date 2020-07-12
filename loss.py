@@ -9,7 +9,8 @@ class ContentLoss(th.nn.Module):
         super(ContentLoss,self).__init__()
 
     def forward(self,generated,content):
-        return th.nn.MSELoss(generated,content)
+        mse_loss = th.nn.MSELoss()
+        return mse_loss(generated,content)
 
 class StyleLoss(th.nn.Module):
     """ Measures how close the style of the generated image is compared to the original style image"""
@@ -17,7 +18,9 @@ class StyleLoss(th.nn.Module):
     def __init__(self):
         super(StyleLoss,self).__init__()
 
-    def forward(self,generated,content):
-        g_gen = gram(generated)
-        g_con = gram(content)
-        return th.nn.MSELoss(g_gen,g_con)
+    def forward(self,generated,style):
+        g_gen = gram_matrix(generated)
+        g_style = gram_matrix(style)
+        mse_loss = th.nn.MSELoss()
+        # print(g_gen.size(),g_style.size())
+        return mse_loss(g_gen,g_style)
