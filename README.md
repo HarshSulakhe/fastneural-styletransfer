@@ -3,12 +3,15 @@ This is an implementation of fast neural style transfer using autoencoders. I us
 
 ## File Descriptions
 - ```model.py``` - Autoencoder model definition
+- ```vgg.py``` - VGG custom architecture to extract features
 - ```loss.py``` - Function definitions of Content Loss and Style Loss
 - ```utils.py``` - Helper functions
+- ```dataset.py``` - Custom Dataset to provide images during training
 - ```main.ipynb``` - Main training script
 
 ## Results
-
+<img src = './images/generated/spooky_mosaic.jpg'>
+<img src = './images/generated/stylized_lion.jpg'>
 
 ## Dependencies
 - PyTorch 1.4.0
