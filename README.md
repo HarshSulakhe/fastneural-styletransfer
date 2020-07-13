@@ -11,13 +11,13 @@ This is an implementation of fast neural style transfer using autoencoders. I us
 
 ## Results
 
-<img src = './images/spooky.jpg' width = "30%" style="border:5px solid black" >  +
-<img src = './images/mosaic.jpg' width = "30%" style="border:5px solid black"> =
+<img src = './images/spooky.jpg' width = "30%" style="border:5px solid black" >
+<img src = './images/mosaic.jpg' width = "30%" style="border:5px solid black">
 <img src = './images/generated/spooky_mosaic.jpg' width = "30%" style="border:5px solid black">
 <br>
 <br>
-<img src = './images/amber.jpg' width = "30%" style="border:5px solid black"> +
-<img src = './images/lion.jpeg' width = "30%" style="border:5px solid black"> =
+<img src = './images/amber.jpg' width = "30%" style="border:5px solid black">
+<img src = './images/lion.jpeg' width = "30%" style="border:5px solid black">
 <img src = './images/generated/stylized_lion.jpg' width = "30%" style="border:5px solid black">
 
 ## Dependencies
