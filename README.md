@@ -10,7 +10,7 @@ This is an implementation of fast neural style transfer using autoencoders. I us
 - ```main.ipynb``` - Main training script
 
 ## Results
-
+<div align = "center">
 <img src = './images/spooky.jpg' width = "30%" style="border:5px solid black" >
 <img src = './images/mosaic.jpg' width = "30%" style="border:5px solid black">
 <img src = './images/generated/spooky_mosaic.jpg' width = "30%" style="border:5px solid black">
@@ -19,6 +19,10 @@ This is an implementation of fast neural style transfer using autoencoders. I us
 <img src = './images/amber.jpg' width = "30%" style="border:5px solid black">
 <img src = './images/lion.jpeg' width = "30%" style="border:5px solid black">
 <img src = './images/generated/stylized_lion.jpg' width = "30%" style="border:5px solid black">
+</div>
+
+## Pre-trained Models
+Pre-trained autoencoder models can be found [here](https://drive.google.com/drive/folders/1dqkjCWfv9-Go4WAaXoLxsARdb4XqTnhU?usp=sharing)
 
 ## Dependencies
 - PyTorch 1.4.0
